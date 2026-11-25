@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRIKAYA.EG — كود تفاعلي متغير</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <style>
+    * { box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
+    body {
+      margin: 0;
+      background: #0d1117;
+      color: #f0f6fc;
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 14px 18px;
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .logo {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: #10b981; color: #052e16;
+      font-weight: 800; display: grid; place-items: center; font-size: 18px;
+    }
+    .nav-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+    button {
+      cursor: pointer; border: none; border-radius: 10px;
+      padding: 10px 14px; font-weight: 700; font-size: 14px;
+      transition: opacity 0.15s, transform 0.1s;
+    }
+    button:active { transform: scale(0.98); }
+    button:hover { opacity: 0.92; }
+    .btn-primary { background: #10b981; color: #052e16; }
+    .btn-secondary { background: #21262d; color: #f0f6fc; border: 1px solid #30363d; }
+    .container { max-width: 720px; margin: 24px auto; padding: 0 16px; }
+    .card {
+      background: #161b22; border: 1px solid #30363d;
+      border-radius: 16px; padding: 20px; margin-bottom: 16px;
+    }
+    h1 { margin: 0 0 8px; font-size: 24px; }
+    p.muted { color: #8b949e; margin: 0 0 16px; line-height: 1.6; }
+    .steps-grid { display: grid; gap
